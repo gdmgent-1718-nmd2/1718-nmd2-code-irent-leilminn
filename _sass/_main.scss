@@ -1,3 +1,91 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+body {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
+}
+
+a{
+  color: whitesmoke;
+}
+a:hover{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.card{
+background-color: rgb(125, 182, 33);
+border: none;
+margin: 10px;
+}
+.card:hover{
+  background-color: rgba(127, 182, 33, 0.85);
+  }
+.card-body{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.afbeelding_container {
+  position: relative;
+  float: left;
+  margin-bottom: 15px;
+  }
+  
+.afbeelding_container .tekst_container {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  color: whitesmoke;
+  }
+
+.afbeelding_container .btn_container{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: whitesmoke;
+}
+.afbeelding_container .quote_container {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  color: #000;
+  font-size: 18px;
+  }
+
+.btn {
+  border-radius: 0.65rem;
+  border: none;
+}
+.btn-dark {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.btn-secondary{
+  background-color: #C6C5B3;
+  color: black;
+}
+.btn-secondary:hover{
+  background-color: rgb(131, 130, 120);
+  color: whitesmoke;
+}
+
+.btn-primary {
+  background-color: rgba(37, 37, 37, 0.75);
+  color: whitesmoke;
+  padding: 0.25rem 0.5rem;
+  margin-top: 10px;
+}
+.btn-primary:hover {
+  background-color: #C6C5B3;
+  color: black;
+}
+.rechts{
+  text-align: right;
+}
+.embed-responsive{
+  margin-top: 15px;
+}

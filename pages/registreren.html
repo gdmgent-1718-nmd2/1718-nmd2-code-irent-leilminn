@@ -1,0 +1,37 @@
+---
+layout   : default
+permalink: /registreren.html
+published: true
+# Custom Page Variables
+# ─────────────────────
+---
+<div class="afbeelding_container">
+    <img src="img/account.jpg" alt="Registreren" class="img-fluid">
+<div class="tekst_container">
+    <h1>Registreren</h1>
+</div>
+</div>
+<div>
+    <h2>Nieuw hier?</h2>
+    <p>
+        Registreren is snel en éénvoudig. Je registratie is nodig om Gerda te huren.
+    </p>
+    <a class="btn btn-secondary" href={{'/account-aanmaken.html'|relative_url}}>Account aanmaken</a>
+    <h2>Heb je al een account?</h2>
+    <p>
+        Hier kan je inloggen!
+    </p>
+    <form>
+            <div class="form-group">
+                <label for="InputEmail1">E-mailadres *</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="leilaminne@gmail.com">
+                <small id="emailHelp" class="form-text text-muted">Uw e-mailadres wordt niet openbaar gemaakt.</small>                
+            </div>
+            <div class="form-group">
+                <label for="InputPassword">Wachtwoord *</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Wachtwoord">
+                <small id="emailHelp" class="form-text text-muted"><a href="#">Uw wachtwoord vergeten?</a></small>
+            </div>
+    </form>
+    <a class="btn btn-secondary" href={{'/winkelmand-ingelogd.html'|relative_url}}>Registreren</a>
+</div>

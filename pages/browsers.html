@@ -1,0 +1,26 @@
+---
+layout: default
+permalink: browsers/
+published: true
+
+browsers:
+  -
+    labeltje: Google
+    href: https://google.com
+  -
+    labeltje: Bing
+    href: https://bing.com
+  -
+    labeltje: Duck Duck Go
+    href: https://duckduckgo.com
+---
+<pre>{{ page.browsers | inspect }}</pre>
+
+{% assign browsers = page.browsers | sort: 'labeltje' %}
+
+<ul>
+    {% for browser in browsers %}
+    <li><a href="{{ browser.href }}" target="_blank">{{ browser.labeltje }}</a></li>
+    {% endfor %}
+</ul>
+

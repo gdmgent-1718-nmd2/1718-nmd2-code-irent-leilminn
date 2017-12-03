@@ -1,0 +1,51 @@
+---
+layout   : default
+permalink: /winkelmand.html
+published: true
+# Custom Page Variables
+# ─────────────────────
+title: Winkelmand
+---
+<div class="afbeelding_container">
+    <img src="img/gerda.jpg" alt="Contact" class="img-fluid">
+<div class="tekst_container">
+    <h1>{{ page.title }}</h1>
+</div>
+</div>
+<div>
+    <h2>Gerda</h2>
+    <h3>€ 14,99/dag</h3>
+    <p>
+        Aantal dagen
+    </p>
+    <div class="form-check form-check-inline">
+        <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 dag
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 dagen
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 dagen
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4 dagen
+        </label>
+    </div>
+    <h2>Totaal: € 29,98</h2>
+    <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Ik ga akkoord met de
+            <a>algemene voorwaarden.</a>
+        </span>
+    </label>
+    <a class="btn btn-block btn-secondary" href="{{'/registreren.html'|relative_url}}">Naar de kassa</a>
+    <a class="btn btn-primary" href="{{'/winkelmand.html'|relative_url}}">Winkelmand leegmaken</a>
+</div>
