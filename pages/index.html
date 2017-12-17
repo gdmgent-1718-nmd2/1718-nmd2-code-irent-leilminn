@@ -1,30 +1,33 @@
 ---
-layout   : default
+layout   : template2
 permalink: /
 # Custom Page Variables
 # ─────────────────────
-title: iGoat
+
 ---
 
-<div class="afbeelding_container">
-    <img src="img/groengras.jpg" alt="Quote 1" class="img-fluid">
-    <div class="quote_container">
-        <p>
-            “Het gras is niet altijd groener aan de overkant.” – Timothy D’hoe
-        </p>
+<div class="col-12 col-md-6">
+    <div class="header-container">
+        <img src="img/quote1.jpg" alt="Quote 1" class="img-fluid">
+        <div class="quote_container">
+            <p>
+                “Het gras is niet altijd groener aan de overkant.” – Timothy D’hoe
+            </p>
+        </div>
+        <div class="btn_container">
+            <a class="btn btn-dark" href={{ 'gerda'|relative_url}}>Ontdek ons Gerda</a>
+        </div>
     </div>
-    <div class="btn_container">
-        <a class="btn btn-dark" href={{ 'gerda'|relative_url}}>Ontdek ons Gerda</a>
-    </div>
-</div>
     <div>
         <p>
-            Goat is de manier om jouw gras te laten begrazen. Naast de perfecte begrazing zorgt Gerda ook rechtstreeks voor bemesting.
-            Na Igoat weet je het, het gras is niet altijd groener aan de overkant.
+            iGoat is de manier om jouw gras te laten begrazen. Naast de perfecte begrazing zorgt Gerda ook rechtstreeks voor bemesting.
+            Na iGoat weet je het, het gras is niet altijd groener aan de overkant.
         </p>
     </div>
-    <div class="afbeelding_container">
-        <img src="img/quote2.jpg" alt="Quote 2" class="img-fluid">
+</div>
+<div class="col-12 col-md-6">
+    <div class="header-container">
+        <img src="img/quote-2.jpg" alt="Quote 2" class="img-fluid">
         <div class="quote_container">
             <p>
                 “Bij iGoat zijn we voortdurend verbaasd over hoe ons klein geitje groot plezier brengt. Dat kleine geitje vormt het hart
@@ -35,9 +38,10 @@ title: iGoat
             <a class="btn btn-dark" href={{ 'over-ons'|relative_url}}>Ontdek wie we zijn</a>
         </div>
     </div>
-    <div>
+    <div class="col-12">
         <p>
             Milieubewuste mensen, gezinnen met kinderen en zelfs kinderboerderijen kiezen voor Igoat als het gaat om het onderhoud van
             je gazon.
         </p>
     </div>
+</div>
