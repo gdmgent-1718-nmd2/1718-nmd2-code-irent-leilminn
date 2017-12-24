@@ -1,3 +1,20 @@
+<nav class="navbar d-flex justify-content-end navbar-light bg-light">
+    <div class="d-flex justify-content-end facebook">
+        <a class="sprite" href="https://facebook.com" target="_blank"></a>
+    </div>
+    <div class="d-flex justify-content-end twitter">
+        <a class="sprite" href="https://twitter.com" target="_blank"></a>
+    </div>
+    <div class="d-flex justify-content-end instagram">
+        <a class="sprite" href="https://instagram.com" target="_blank"></a>
+    </div>
+    <div class="d-flex justify-content-end account">
+        <a class="sprite" href={{ 'account'|relative_url}}></a>
+    </div>
+    <div class="d-flex justify-content-end winkelmand">
+        <a class="sprite" href={{ 'winkelmand'|relative_url}}></a>
+    </div>
+</nav>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- websitelogo -->
     <a class="navbar-brand" href="{{'index'|relative_url}}">
@@ -7,7 +24,7 @@
     <!-- hamburger icoon -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <h3>MENU</h3>
     </button>
 
     <!-- hoofdnavigatie -->
@@ -34,22 +51,5 @@
             </li>
             {% endif %} {% endfor %}
         </ul>
-    </div>
-    <div class="col-6 d-flex flex-row">
-        <a href="https://twitter.com" target="_blank">
-            <img src="img\twitter.png" alt="Twitter" class="media">
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-            <img src="img\facebook.png" alt="Facebook" class="media">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="img\instagram.png" alt="Instagram" class="media">
-        </a>
-        <a href={{ 'account'|relative_url}}>
-            <img src="img\account.png" alt="Account" class="media">
-        </a>
-        <a href={{ 'winkelmand'|relative_url}}>
-            <img src="img\winkelmand.png" alt="Winkelmand" class="media">
-        </a>
     </div>
 </nav>

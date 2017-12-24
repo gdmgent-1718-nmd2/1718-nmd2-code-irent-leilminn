@@ -2,22 +2,31 @@
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
 
+.navbar{
+  padding: 10px 20px 0px 20px;
+}
 body {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: whitesmoke;
+  background-color: $een;
+  color: $drie;
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+}
+footer{
+  width: 100%;
 }
 h1 {
   font-size: 0.5in;
 }
 a{
-  color: whitesmoke;
+  color: $drie;
 }
 a:hover{
   text-decoration: none;
-  color: whitesmoke;
+  color: $drie;
 }
 .card{
-background-color: rgb(125, 182, 33);
+background-color: $twee;
 border: none;
 margin: 10px;
 }
@@ -25,7 +34,7 @@ margin: 10px;
   background-color: rgba(127, 182, 33, 0.85);
   }
 .card-body{
-  background-color: whitesmoke;
+  background-color: $drie;
   color: black;
 }
 
@@ -37,15 +46,14 @@ margin: 10px;
 .header-container .header-text {
   position: absolute;
   bottom: 5px;
-  color: whitesmoke;
-  text-align: right;
+  color: $drie;
   }
 
 .header-container .btn_container{
   position: absolute;
   bottom: 10px;
   left: 10px;
-  color: whitesmoke;
+  color: $drie;
 }
 .header-container .quote_container {
   position: absolute;
@@ -53,16 +61,19 @@ margin: 10px;
   top: 20px;
   left: 20px;
   right: 20px;
-  color: #000;
+  color: black;
   font-size: 18px;
   }
-
+.kaart {
+  margin-bottom: 15px;
+}
 .btn {
   border-radius: 0.65rem;
   border: none;
+  margin-bottom: 15px;
 }
 .btn-dark {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $een;
 }
 
 .btn-secondary{
@@ -71,12 +82,12 @@ margin: 10px;
 }
 .btn-secondary:hover{
   background-color: rgb(131, 130, 120);
-  color: whitesmoke;
+  color: $drie;
 }
 
 .btn-primary {
   background-color: rgba(37, 37, 37, 0.75);
-  color: whitesmoke;
+  color: $drie;
   padding: 0.25rem 0.5rem;
   margin-top: 10px;
 }
@@ -90,6 +101,34 @@ margin: 10px;
 .embed-responsive{
   margin-top: 15px;
 }
-.media{
-  max-width: 30px;
+
+
+//
+//sprites
+//
+.sprite{
+  width:36px;
+  height:36px;
+  background-image:url(../../img/sprites.png);
+  background-repeat: no-repeat;
+  background-size: 108px;
+  background-color: transparent;
 }
+
+.facebook .sprite{
+  background-position: 0px 0px;
+}
+.twitter .sprite{
+  background-position: -36px 0px;
+}
+.instagram .sprite{
+  background-position: -72px 0px;
+}
+.account .sprite{
+  background-position: 0px -36px;
+}.winkelmand .sprite{
+  background-position: -36px -36px;
+}
+//
+//
+//
