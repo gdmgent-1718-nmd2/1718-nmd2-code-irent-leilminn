@@ -13,22 +13,36 @@ header-image: accounts.jpg
     <p>
         Registreren is snel en éénvoudig. Je registratie is nodig om Gerda te huren.
     </p>
-    <a class="btn btn-secondary" href={{'/account-aanmaken.html'|relative_url}}>Account aanmaken</a>
+</div>
+<div class="col-12 col-lg-6">
+    <a class="btn btn-block btn-secondary" href={{ '/account-aanmaken.html'|relative_url}}>Account aanmaken</a>
+</div>
+<div class="col-12">
     <h2>Heb je al een account?</h2>
     <p>
         Hier kan je inloggen!
     </p>
+</div>
+<div class="col-12 col-lg-6">
     <form>
-            <div class="form-group">
-                <label for="InputEmail1">E-mailadres *</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="leilaminne@gmail.com">
-                <small id="emailHelp" class="form-text text-muted">Uw e-mailadres wordt niet openbaar gemaakt.</small>                
-            </div>
-            <div class="form-group">
-                <label for="InputPassword">Wachtwoord *</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Wachtwoord">
-                <small id="emailHelp" class="form-text text-muted"><a href="#">Uw wachtwoord vergeten?</a></small>
-            </div>
+        <div class="form-group">
+            <label for="InputEmail1">E-mailadres</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="leilaminne@gmail.com">
+            <small id="emailHelp" class="form-text text-muted">Uw e-mailadres wordt niet openbaar gemaakt.</small>
+        </div>
     </form>
-    <a class="btn btn-secondary" href={{'winkelmand-ingelogd'|relative_url}}>Registreren</a>    
+</div>
+<div class="col-12 col-lg-6">
+    <form>
+        <div class="form-group">
+            <label for="InputPassword">Wachtwoord</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Wachtwoord">
+            <small id="emailHelp" class="form-text text-muted">
+                <a href="#">Uw wachtwoord vergeten?</a>
+            </small>
+        </div>
+    </form>
+</div>
+<div class="col-12 col-lg-6">
+    <a class="btn btn-block btn-secondary" href={{ 'winkelmand-ingelogd'|relative_url}}>Registreren</a>
 </div>

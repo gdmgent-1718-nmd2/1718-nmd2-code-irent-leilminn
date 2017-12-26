@@ -8,40 +8,47 @@ title: Account aanmaken
 header-image: accounts.jpg
 ---
 
-<div class="col-12">
+<div class="col-12 col-lg-6">
     <form>
         <div class="form-group">
-            <label for="InputName">Naam</label>
+            <label for="InputName">Naam*</label>
             <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Leïla Minne">
         </div>
         <div class="form-group">
-            <label for="InputEmail">E-mailadres</label>
-            <input type="wachtwoord" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="leilaminne@gmail.com">
+            <label for="InputEmail">E-mailadres*</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="leilaminne@gmail.com">
         </div>
         <div class="form-group">
-            <label for="InputPassword">Wachtwoord</label>
+            <label for="InputPassword">Wachtwoord*</label>
             <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Wachtwoord">
         </div>
         <div class="form-group">
-            <label for="InputPassword">Herhaal uw wachtwoord</label>
+            <label for="InputPassword">Herhaal uw wachtwoord*</label>
             <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Wachtwoord">
         </div>
+    </form>
+</div>
+<div class="col-12 col-lg-6">
+    <form>
         <div class="form-group">
-            <label for="InputAddress">Straat + huisnummer</label>
+            <label for="InputAddress">Straat + huisnummer*</label>
             <input type="Address" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Hoge Seine 5">
         </div>
         <div class="form-group">
-            <label for="InputAddress">Postcode</label>
+            <label for="InputAddress">Postcode*</label>
             <input type="Address" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="8691">
         </div>
         <div class="form-group">
-            <label for="InputAddress">Gemeente</label>
+            <label for="InputAddress">Gemeente*</label>
             <input type="Address" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="Beveren-aan-de-IJzer">
         </div>
         <div class="form-group">
-            <label for="InputTel">GSM-nummer</label>
+            <label for="InputTel">GSM-nummer*</label>
             <input type="Tel" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" placeholder="0470 42 69 20">
+            <small id="emailHelp" class="form-text text-muted">* verplichte velden</small>
         </div>
     </form>
-    <a class="btn btn-secondary" href={{ 'account-ingelogd'|relative_url}}>Inloggen</a>
+</div>
+<div class="col-12">
+    <a class="btn btn-secondary d-flex justify-content-center" href={{ 'account-ingelogd'|relative_url}}>Inloggen</a>
 </div>
